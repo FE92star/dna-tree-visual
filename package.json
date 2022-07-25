@@ -1,0 +1,19 @@
+{
+  "name": "dna-tree-visual",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2"
+  },
+  "dependencies": {
+    "force-graph": "^1.42.11"
+  }
+}
