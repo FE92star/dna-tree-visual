@@ -23,8 +23,7 @@
       "ESNext"
     ],
     "types": [
-      "node",
-      "jest"
+      "node"
     ]
   },
   "include": ["src/*"]
