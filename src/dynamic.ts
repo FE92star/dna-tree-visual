@@ -21,13 +21,12 @@ export function generateDynamicNodes() {
     })
   }, 1000)
 
-  //
-
+  // 移除节点
   function removeNode(node) {
     let { nodes, links } = Graph.graphData()
-    links = links.filter(l => l.source !== node && l.target !== node) // Remove links attached to node
+    links = links.filter(l => l.source !== node && l.target !== node) // 移除节点的关联对象
     nodes.splice(node.id, 1) // Remove node
-    nodes.forEach((n, idx) => { n.id = idx }) // Reset node ids to array index
+    nodes.forEach((n, idx) => { n.id = idx }) // 重置节点的ID
     Graph.graphData({ nodes, links })
   }
 }
